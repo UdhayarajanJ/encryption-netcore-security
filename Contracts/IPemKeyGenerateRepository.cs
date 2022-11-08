@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace encryption_netcore_security.Contracts
 {
-    interface IPemKeyGenerateRepository
+    public interface IPemKeyGenerateRepository
     {
+        public void GeneratePEMKey();
     }
 }
