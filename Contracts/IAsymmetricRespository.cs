@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace encryption_netcore_security.Contracts
 {
-    interface IAsymmetricRespository
+    public interface IAsymmetricRespository
     {
+        public string AsymmetricEncryptionMethod(string rawText);
+        public string AsymmetricDecryptionMethod(string cipherText);
     }
 }
