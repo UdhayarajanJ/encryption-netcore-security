@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace encryption_netcore_security.Contracts
 {
-    interface ISymmetricRepository
+    public interface ISymmetricRepository
     {
+        public string SymmetricEncryptionMethod(string rawText);
+        public string SymmetricDecryptionMethod(string cipherText);
+
     }
 }
